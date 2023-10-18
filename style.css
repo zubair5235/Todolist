@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lobster&family=Poppins&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+header{
+    width: 100vw;
+    text-align: center;
+}
+
+.inputContainer{
+    display: flex;
+    width: 100vw;
+    height: 50vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#addTask-btn{
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+    background-color: rgb(160, 51, 233);
+    border-radius: 5px;
+    border-color: rgb(160, 51, 233);
+    cursor: pointer;
+}
+
+.clickDesign{
+    outline: 5px solid rgba(160, 51, 233,.5);
+    transition: all .1s linear 0s;
+}
+
+#textEditor{
+    display: none;
+    padding: 10px;
+    border-radius: 7px;
+    border: 2px solid rgb(20, 218, 100);
+}
+
+#save-btn{
+    display: none;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+    background-color: green;
+    border-radius: 5px;
+    border-color: green;
+    cursor: pointer;
+}
+
+#delete-btn
+{
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: red;
+    border-radius: 5px;
+    border-color: red;
+    padding: 2px;
+    color: white;
+    margin-left: 20px;
+}
+
+.listContainer{
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+ol{
+    background-color: rgb(131, 166, 196);
+    width: max-content;
+    list-style-position: inside;
+    border-radius: 10px;
+}
+
+li{
+    text-align: justify;
+    padding: 10px;
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Lobster', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todolist</title>
+    <link rel="shortcut icon" href="Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <meta name="author" content="Mohamed zubair">
+    <meta name="description" content="A Simple List Maker">
+    <meta property="author" content="Mohamed zubair">
+    <meta property="description" content="A Simple List Maker">
+    <meta property="type" content="Website">
+</head>
+<body>
+    <header>
+        <h1>Welcome, You can list your Priorites</h1>
+    </header>
+    <main>
+        <div class="inputContainer">
+            <button id="addTask-btn" onclick="displayEditor()">Add Work</button>
+            <br>
+            <br>
+            <input type="text" id="textEditor" onkeyup="displaySaveButton()">
+            <br>
+            <button id="save-btn" onclick="saveWork()">Save Work</button>
+        </div>
+        <div class="listContainer">
+            <ol id="listContainer">
+            </ol>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
