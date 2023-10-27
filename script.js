@@ -2,6 +2,7 @@ var AddTaskButton = document.getElementById("addTask-btn");
 var TextEditor = document.getElementById("textEditor");
 var SaveButton = document.getElementById("save-btn");
 var ListContainer = document.getElementById("listContainer");
+var LoadingPage = document.querySelector(".loadingPage");
 
 
 function displayEditor()
@@ -30,3 +31,8 @@ function deleteWork(event)
 {
     event.target.parentElement.remove();
 }
+
+
+window.addEventListener("load",()=>{
+    LoadingPage.style.display = "none";
+});
